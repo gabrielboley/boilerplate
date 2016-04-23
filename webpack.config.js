@@ -28,20 +28,11 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development')
     })
   ],
-  module: {
-    loaders: [{
-      test: /\.js?$/,
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        "presets": ["react", "es2015", "stage-0", "react-hmre"]
-      }
-    }, {
-      test: /\.json?$/,
-      loader: 'json'
-    }, {
-      test: /\.css$/,
-      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
-    }]
-  }
+    module: {
+        loaders: [
+            { test: /\.js$/, loader: 'babel', exclude: /node_modules/, query: { presets: ["react", "es2015", "stage-0", "react-hmre"] } },
+            { test: /\.less$/, loader: "style!css!less" },
+            { test: /\.json$/, loader: 'json' }
+        ]
+    }
 };

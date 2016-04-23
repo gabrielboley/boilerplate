@@ -27,8 +27,13 @@
   },
   "dependencies": {
     "babel-cli": "^6.4.0",
+    "material-ui": "^0.14.4",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.2.1",
+    "redux": "^3.2.1",
+    "redux-logger": "^2.4.0",
+    "redux-thunk": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
@@ -49,6 +54,8 @@
     "jscs": "^2.1.1",
     "jsdom": "^6.5.1",
     "json-loader": "^0.5.3",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.3",
     "mocha": "^2.3.3",
     "mocha-jsdom": "^1.0.0",
     "postcss-loader": "^0.6.0",
